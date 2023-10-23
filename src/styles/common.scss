@@ -1,0 +1,9 @@
+/*
+웹폰트 : 용량이 큼, 다운속도 로딩 속도 느림, 최적화 작업 필요
+웹폰트 문제점: paint 단계에서 웹 폰트가 다운완료가 되지 않았다면 브라우저는 해당 자원 콘텐츠 렌더링을 차단 시킴
+*/
+@import '../../public/font/notoSans/notoSans.css';
+
+// base
+@import 'reset.css';
+@import 'base.css';

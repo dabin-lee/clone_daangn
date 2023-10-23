@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap; /* 글꼴이 다운로드되기 전까지, 시스템 글꼴을 사용 -> 다운로드가 완료되면 웹 글꼴을 적용 */
+  src: url(./NotoSansKR-Thin.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap; /* 글꼴이 다운로드되기 전까지, 시스템 글꼴을 사용 -> 다운로드가 완료되면 웹 글꼴을 적용 */
+  src: url(./NotoSansKR-SemiBold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(./NotoSansKR-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./NotoSansKR-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(./NotoSansKR-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(./NotoSansKR-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(./NotoSansKR-Black.woff2) format('woff2');
+}

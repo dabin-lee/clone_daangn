@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", //타입스크립트파일 버전: es5, ES2020, esnext
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    /*
+    module은 자바스크립트 파일간 import 문법을 구현할 때 어떤 문법을 쓸지
+    commonjs는 require 문법
+    es2015, esnext는 import, export 문법 (최신 모듈사용?)
+    */
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true, //타입 확인 엄격 여부
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    /*path 설정*/
+    "baseUrl": ".", // baseUrl을 기준으로 관련된 위치에 모듈 이름의 경로 매핑 목록을 나열합니다.
+    "paths": {
+      /*
+        //@src로 시작하면 아래 줄의 디렉토리를 의미한다.
+        //baseUrl을 기준으로 src/ 하위 디렉토리를 @src로 표현한다.
+      */
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"]
+      //@components로 시작하면 components/ 하위 디렉토리를 의미한다.
+      //"@hooks/*": ["src/hooks/*"],
+      //"@layouts/*": ["src/layouts/*"],
+      //"@styles/*": ["src/styles/*"],
+      //"@pages/*": ["src/pages/*"],
+      //"@utils/*": ["src/utils/*"],
+      //"@typings/*": ["src/typings/*"]
+    }
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
